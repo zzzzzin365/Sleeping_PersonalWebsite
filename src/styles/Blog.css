@@ -1,0 +1,394 @@
+.blog-page {
+  min-height: 100vh;
+  background-color: #F0EFEB;
+  padding: 2rem;
+  position: relative;
+}
+
+.blog-content {
+  color: #666;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+  padding-top: 8rem;
+  position: relative;
+}
+
+.decorative-line-left {
+  position: absolute;
+  left: 0;
+  top: calc(50% + 17rem);
+  transform: translateY(-50%);
+}
+
+svg.decorative-line-right {
+  position: absolute;
+  right: 0;
+  top: calc(50% + 17rem);
+  transform: translateY(-50%) scaleX(-1) scale(1.2) !important;
+  transform-origin: center;
+}
+
+.learning-content-section {
+  padding: 4rem 0 2rem;
+  color: #302C1A;
+}
+
+.learning-content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.learning-title-item {
+  font-size: 2rem;
+  color: #302C1A;
+  margin: 2rem 0;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.learning-divider {
+  border: none;
+  height: 1px;
+  background-color: #D0D0D0;
+  margin: 3rem 0;
+  opacity: 0.6;
+}
+
+.back-to-top-container {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #D0D0D0;
+}
+
+.back-to-top-btn {
+  background: #302C1A;
+  color: #F0EFEB;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  background: #4A463A;
+  transform: translateY(-2px);
+}
+
+.blog-content svg {
+  transform: scale(1.2);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.blog-content svg:hover {
+  transform: scale(1.5);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+button {
+  background: #302C1A;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #302C1A;
+}
+
+@media (max-width: 1200px) {
+  .decorative-line-left,
+  .decorative-line-right {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .decorative-line-left,
+  .decorative-line-right {
+    width: 250px;
+  }
+  
+  .learning-title-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 1rem;
+  }
+  
+  .blog-content {
+    padding-top: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .decorative-line-left,
+  .decorative-line-right {
+    width: 200px;
+  }
+  
+  .learning-content-container {
+    padding: 0 1rem;
+  }
+  
+  .learning-title-item {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+  
+  .learning-divider {
+    margin: 2rem 0;
+  }
+  
+  .back-button-top {
+    top: 20px !important;
+    left: 10px !important;
+  }
+  
+  .social-icons {
+    top: 20px !important;
+    right: 10px !important;
+  }
+  
+  .container {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-page {
+    padding: 0.5rem;
+  }
+  
+  .blog-content {
+    padding-top: 5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .decorative-line-left,
+  .decorative-line-right {
+    width: 150px;
+    top: calc(50% + 15rem);
+  }
+  
+  .learning-content-section {
+    padding: 2rem 0 1rem;
+  }
+  
+  .learning-content-container {
+    padding: 0 0.5rem;
+  }
+  
+  .learning-title-item {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+  
+  .learning-divider {
+    margin: 1.5rem 0;
+  }
+  
+  .back-to-top-container {
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+  
+  .back-button-top {
+    top: 15px !important;
+    left: 5px !important;
+  }
+  
+  .social-icons {
+    top: 15px !important;
+    right: 5px !important;
+  }
+  
+  .container {
+    gap: 0.5rem;
+  }
+  
+  .icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .blog-content svg {
+    transform: scale(1);
+  }
+  
+  .blog-content svg:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 360px) {
+  .decorative-line-left,
+  .decorative-line-right {
+    width: 120px;
+    top: calc(50% + 12rem);
+  }
+  
+  .learning-title-item {
+    font-size: 1.2rem;
+  }
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: #302C1A;
+  border: 2px solid #302C1A;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #242111;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #ffffff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
+}
+
+/* SplitText 样式 */
+.split-parent {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.5;
+}
+
+.split-parent .split-char {
+  display: inline-block;
+  white-space: pre;
+}
+
+/* Social Icons styles */
+.container {
+  display: flex;
+  column-gap: 28px;
+}
+
+.icon {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  font-size: 25px;
+  outline: 2px solid #302C1A;
+  border-radius: 50%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  color: #53503f;
+  align-items: center;
+  justify-content: center;
+}
+
+button.icon {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+  color: #ffffff;
+}
+
+.icon svg {
+  margin: auto;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-instagram:hover {
+  background-color: #302C1A;
+  outline-color: #302C1A;
+}
+
+.icon-dis:hover {
+  background-color: #302C1A;
+  outline-color: #302C1A;
+}
+
+.icon:hover svg {
+  animation: shake 0.25s;
+  color: rgb(255, 255, 255);
+}
+
+.icon:hover svg path {
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+}
+
