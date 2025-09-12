@@ -513,7 +513,7 @@ function App() {
                             setModalContent({
                               title: '乐呼',
                               description: '基于<b>React Native</b>开发的跨平台app, 是一款以社区联结为基础的新型助老平台，用户终端为移动端。\n\n✦ AI Agent + AR\n\ngithub地址：<a href="https://github.com/zzzzzin365/Huban_V2.git" target="_blank" style="color: white;">https://github.com/zzzzzin365/Huban_V2.0.git</a>',
-                              video: 'https://github.com/zzzzzin365/Sleeping_personalwebsite/releases/download/v2/default.mp4',
+                              video: ' https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio2/default.mp4',
                               image1: p2_more1,
                               image2: p2_more2
                             });
@@ -563,7 +563,7 @@ function App() {
                             setModalContent({
                               title: '智能排课系统',
                               description: '基于<b>遗传算法</b>与<b>强化学习</b>开发的智能排课系统， 目的是为了减轻高校管理员的排课负担。',
-                              video: 'https://github.com/zzzzzin365/Sleeping_personalwebsite/releases/download/v2-4/p4.mp4',
+                              video: ' https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio4/p4.mp4',
                               image1: p4_more1,
                               image2: p4_more2
                             });
