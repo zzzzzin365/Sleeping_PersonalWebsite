@@ -491,7 +491,7 @@ html {
 }
 
 .card:hover .card-image {
-  scale: 0;
+  scale: 1;
 }
 
 .card__description {
