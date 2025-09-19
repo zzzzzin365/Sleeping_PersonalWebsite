@@ -487,6 +487,10 @@ function App() {
                             setModalContent({
                               title: 'OurEchoes',
                               description: '一款基于 SwiftUI ios开发框架与多模态AI技术的智慧分身记忆互动app,用户能够与基于个人记忆创建的AI角色实现跨时空对话。\n\n✦ LLM + 语音克隆 + TTS合成\n\ngithub地址：<a href="https://github.com/zzzzzin365/OurEchoes.git" target="_blank" style="color: white;">https://github.com/zzzzzin365/OurEchoes.git</a>',
+<<<<<<< HEAD
+=======
+                              video: 'https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio1/p1.v1.mp4',
+>>>>>>> 9455e74 (add a video)
                               image: p1_more,
                               transparentImage: true
                             });
