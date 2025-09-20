@@ -227,34 +227,21 @@ function App() {
               <h3>{modalContent.title}</h3>
               {modalContent.video && (
                 <div className="modal-video-container">
-                  <video 
-                    controls 
+                  <video
+                    controls
                     className="modal-video"
                     autoPlay={false}
                     muted={false}
                     preload="metadata"
-                    onError={(e) => {
-                      console.error('视频加载失败:', e);
-                      // 如果GitHub链接失败，尝试使用本地文件作为备选
-                      if (e.target.src.includes('github.com')) {
-                        const localVideo = e.target.src.replace(
-                          'https://github.com/zzzzzin365/Sleeping_personalwebsite/releases/download/v2-4/p4.mp4',
-                          '/p4项目演示视频.mp4'
-                        ).replace(
-                          'https://github.com/zzzzzin365/Sleeping_personalwebsite/releases/download/v2/default.mp4',
-                          '/乐呼.mp4'
-                        );
-                        e.target.src = localVideo;
-                      }
-                    }}
                   >
                     <source src={modalContent.video} type="video/mp4" />
-                    <source 
-                      src={modalContent.video.includes('p4.mp4') ? '/p4项目演示视频.mp4' : '/乐呼.mp4'} 
-                      type="video/mp4" 
-                    />
                     您的浏览器不支持视频播放。
                   </video>
+                </div>
+              )}
+              {modalContent.videoEmbed && (
+                <div className="modal-video-container">
+                  <div dangerouslySetInnerHTML={{ __html: modalContent.videoEmbed }} />
                 </div>
               )}
               {modalContent.image && (
@@ -514,7 +501,7 @@ function App() {
                             setModalContent({
                               title: '乐呼',
                               description: '基于<b>React Native</b>开发的跨平台app, 是一款以社区联结为基础的新型助老平台，用户终端为移动端。\n\n✦ AI Agent + AR\n\ngithub地址：<a href="https://github.com/zzzzzin365/Huban_V2.0.git" target="_blank" style="color: white;">https://github.com/zzzzzin365/Huban_V2.0.git</a>',
-                              video: ' https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio2/default.mp4',
+                              video: 'https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio2/default.mp4',
                               image1: p2_more1,
                               image2: p2_more2
                             });
@@ -540,7 +527,7 @@ function App() {
                             setModalContent({
                               title: 'DeepPaper',
                               description: '基于<b>Vue</b>与<b>NLP等AI技术</b>开发的智能论文阅读与管理平台，用户可通过本平台实现智能论文管理与阅读、获得个性化咨询、文献推荐。\n\n✦ NLP + ML + RAG + OCR\n\ngithub地址：<a href="https://github.com/zzzzzin365/DeepPaper.git" target="_blank" style="color: white;">https://github.com/zzzzzin365/DeepPaper.git</a>',
-                              image: p3_more
+                              videoEmbed: '<iframe src="https://player.vimeo.com/video/1120335146?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="P3"></iframe>'
                             });
                             setShowModal(true);
                           }}
@@ -564,7 +551,7 @@ function App() {
                             setModalContent({
                               title: '智能排课系统',
                               description: '基于<b>遗传算法</b>与<b>强化学习</b>开发的智能排课系统， 目的是为了减轻高校管理员的排课负担。',
-                              video: ' https://github.com/zzzzzin365/Sleeping_PersonalWebsite/releases/download/vedio4/p4.mp4',
+                              videoEmbed: '<iframe src="https://player.vimeo.com/video/1120015655?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="p4"></iframe>',
                               image1: p4_more1,
                               image2: p4_more2
                             });
